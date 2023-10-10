@@ -33,6 +33,13 @@
     display: flex;
 }
 
+.navbar {
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    padding: 0 2rem;
+}
 .nav {
     margin: 0 3rem;
 }
@@ -40,7 +47,6 @@
 .nav ul {
     list-style-type: none;
     display: flex;
-
 }
 
 .nav ul li {
@@ -242,21 +248,21 @@ ion-icon {
     align-items: center;
     padding: 4rem 0;
     gap: 4rem;
-    background-color: rgb(211, 204, 204);
+    background-color: rgb(231, 227, 227)
 
 }
 
 .industry {
     text-align: center;
-
 }
 
 .industry>h1 {
     margin-bottom: 1rem;
+    color: black;
 }
 
 .industry>p {
-    color: gray;
+    color: black;
 }
 
 .faces ul {
@@ -425,36 +431,34 @@ ion-icon {
     display: flex;
     justify-content: space-around;
     background-color: rgb(42, 55, 68);
-    padding: 40px;
+    padding: 50px;
     padding-bottom: 20rem;
+    width: 100%;
 }
 
 .worlds {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    margin: 0 3rem;
 }
 
 .worlds h1 {
     color: white;
 }
 
-.consultancy {
+/* .consultancy {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgb(231, 227, 227);
-}
+} */
 
 .appointment {
     display: grid;
     grid-template-areas:
         'faces appointment-profile';
-    grid-template-columns: 2, 1fr;
-    grid-template-rows: 1, 1fr;
-    padding: 2rem 0;
-    margin-top: -15rem;
-
+    margin-top: -16rem;
 }
 
 .faces {
@@ -468,13 +472,14 @@ ion-icon {
     justify-content: center;
     align-items: center;
     padding-left: 2rem;
-    padding-right: 4rem;
+    padding-right: 7rem;
 
 }
 
 .appointment-profile h2 {
     text-align: center;
     margin: 20px 0;
+    /* padding: 10px; */
 }
 
 .btn {
@@ -485,8 +490,6 @@ ion-icon {
     margin-top: 15px;
     border-radius: 3px;
     border: none;
-
-
 }
 
 .form .input-field {
@@ -495,7 +498,7 @@ ion-icon {
     border-radius: 3px;
     padding: 10px;
     margin: 5px 0;
-    width: 100%;
+    width: 120%;
 }
 
 .form select.input-field {
@@ -503,7 +506,7 @@ ion-icon {
     border-radius: 3px;
     padding: 10px;
     margin: 5px 0;
-    width: 100%;
+    width: 130%;
 }
 
 .business-consultancy {
@@ -513,11 +516,16 @@ ion-icon {
     padding-top: 1rem;
     background-color: rgb(231, 227, 227);
     margin-top: 3rem;
+    margin: 20px;
+    flex: auto;
+    padding: 0 20rem;
 }
 
 .contact-us {
-    padding: 10px 15px;
+    padding: 20px 15px;
     background-color: rgb(58, 150, 167);
+    margin: 0 3rem;
+    /* padding: 0 1rem; */
 }
 
 .info {
